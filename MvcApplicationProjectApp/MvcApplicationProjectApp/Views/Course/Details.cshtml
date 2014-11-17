@@ -1,0 +1,57 @@
+﻿@model MvcApplicationProjectApp.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Course</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CrsCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CrsCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CrsCradite)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CrsCradite)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CrsName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CrsName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CrsDescription)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CrsDescription)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Department.DeptCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Department.DeptCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Semester.SmtName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Semester.SmtName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CourseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

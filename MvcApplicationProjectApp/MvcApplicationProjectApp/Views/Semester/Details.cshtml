@@ -1,0 +1,22 @@
+﻿@model MvcApplicationProjectApp.Models.Semester
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Semester</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SmtName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SmtName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SemesterId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
